@@ -33,10 +33,10 @@ class VideoUploaderScreen extends StatefulWidget {
 
 class _VideoUploaderScreenState extends State<VideoUploaderScreen> {
   final TextEditingController _tokenController = TextEditingController(
-    text: '8763489715:AAHI-fNnkfhS_2KB4n1pb18hLwNo-YDpmCg',
+    text: String.fromEnvironment('BOT_TOKEN', defaultValue: ''),
   );
   final TextEditingController _chatIdController = TextEditingController(
-    text: '751655768',
+    text: String.fromEnvironment('CHAT_ID', defaultValue: ''),
   );
 
   final ImagePicker _picker = ImagePicker();
